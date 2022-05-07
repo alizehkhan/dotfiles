@@ -1,4 +1,4 @@
-# My Macbook Setup
+# Minimalist Frontend Setup
 
 ## Code Setup
 
@@ -12,7 +12,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**Run your brewfile 🏃🍺**
+**Run your brewfile 🏃**
 To install all your GUI and CLI apps
 ```
 brew bundle
