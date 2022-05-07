@@ -1,0 +1,42 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.snippetSuggestions": "top",
+  "editor.guides.bracketPairs": "active",
+
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 12,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "git.autofetch": true,
+  "gitlens.hovers.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.scopes": ["document"],
+  "gitlens.hovers.currentLine.over": "line",
+
+  "explorer.confirmDelete": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "files.associations": {
+    "*.mdx": "markdown"
+  }
+}
