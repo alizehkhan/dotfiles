@@ -1,0 +1,20 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[user]
+	name = Alizeh Khan
+	email = alizehedinburgh@gmail.com
+
+[alias]
+  co = checkout
+  st = status -sb
+  br = branch
+  ci = commit
+  m = checkout master
+  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+
+[core]
+	excludesfile = /Users/alizehkhan/.gitignore_global
