@@ -39,3 +39,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 - Finder preferences:
 - Terminal preferences:
 - Keyboard: Key repeat (fast) / Delay until repeat (short)
+- Accessibility: Use scroll gesture with command key to zoom
