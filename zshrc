@@ -11,7 +11,6 @@ zstyle ':omz:update' mode auto
 plugins=(
   git
   zsh-syntax-highlighting
-  zsh-autosuggestions
   history-substring-search
   last-working-dir
   web-search
