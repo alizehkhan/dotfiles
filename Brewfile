@@ -9,7 +9,6 @@ brew 'nvm'
 
 # Apps
 cask 'figma'
-cask 'github'
 cask 'google-chrome'
 cask 'slack'
 cask 'telegram-desktop'
@@ -20,6 +19,7 @@ cask 'notion'
 cask 'spotify'
 cask 'google-drive'
 cask 'spectacle'
+cask 'iterm2'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899
