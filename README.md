@@ -37,6 +37,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 - Dock: Automatically hide and show
 - Trackpad: Uncheck Scroll direction: Natural
 - Finder preferences:
-- Terminal preferences:
+- iTerm preferences
+```
+  { 
+    theme: 'Minimal',
+    background: '#20252C',
+    font: 'Menlo',
+    fontSize: '14px',
+  }
+  ```
 - Keyboard: Key repeat (fast) / Delay until repeat (short)
 - Accessibility: Use scroll gesture with command key to zoom
