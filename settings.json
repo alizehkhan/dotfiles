@@ -1,42 +1,56 @@
 {
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "top",
-  "editor.guides.bracketPairs": "active",
-
-  "workbench.startupEditor": "none",
-  "workbench.tree.indent": 12,
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.settings.editor": "json",
-  "workbench.settings.openDefaultSettings": true,
-  "workbench.settings.useSplitJSON": true,
-
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-
-  "git.autofetch": true,
-  "gitlens.hovers.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.scopes": ["document"],
-  "gitlens.hovers.currentLine.over": "line",
-
-  "explorer.confirmDelete": false,
-
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
-  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
   },
-
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": ["javascript, mdx, markdown"],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "explorer.confirmDelete": false,
   "files.associations": {
     "*.mdx": "markdown"
-  }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "sortJSON.contextMenu": {
+    "sortJSONAlphaNum": false,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": false,
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
+  "editor.accessibilitySupport": "off"
 }
