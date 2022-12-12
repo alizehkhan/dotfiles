@@ -11,7 +11,6 @@ brew 'nvm'
 cask 'figma'
 cask 'google-chrome'
 cask 'slack'
-cask 'telegram-desktop'
 cask 'visual-studio-code'
 cask 'whatsapp'
 cask 'zoom'
@@ -23,4 +22,3 @@ cask 'iterm2'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899
-mas 'Trello', id: 1278508951
