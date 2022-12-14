@@ -1,13 +1,11 @@
-# Binaries
+# CLI apps
 brew 'git'
 brew 'mas' # Mac App Store manager
-
-# Development
 brew 'node'
 brew 'yarn'
 brew 'nvm'
 
-# Apps
+# GUI apps
 cask 'figma'
 cask 'google-chrome'
 cask 'slack'
