@@ -31,8 +31,7 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Updates Homebrew recipes
 brew update
 
-# Installs all our CLI and GUI apps in Brewfile
-brew tap homebrew/bundle
+# Installs all our CLI and GUI apps in Brewfile using bundle which is automatically installed when first run
 brew bundle --file $DOTFILES/Brewfile
 
 # Creates code directory and clones Github repositories
