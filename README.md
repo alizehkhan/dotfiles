@@ -4,7 +4,7 @@
 Dotfiles are configuration files for various programs in plain text format. Dotfiles are named that way because they start with a `.` On Unix based systems, dotfiles are hidden by the Operating System by default and are stored in your home directory `~` by default. You can run the command `ls -a` to list all hidden files and directories in the current directory.
 
 ## Zsh
-Shells provide a way for us to communicate with the operating system. This can be via a command-line interface (CLI) or a graphical user interface (GUI). Apple replaced `bash` (bourne again shell) with `zsh` (z shell) as its default shell for macOS Catalina and onwards.
+Shells provide a way for us to communicate with the operating system. This can be via a command-line interface (CLI) or a graphical user interface (GUI). Apple replaced `bash` (bourne again shell) with `zsh` (z shell) as its default shell from macOS Catalina and onwards.
 
 Zsh is built on top of bash so it has additional features such as plug-in support, better customisation, theme support, autocorrection, etc.
 
@@ -22,16 +22,18 @@ Since we're not developing software for Apple devices as frontend engineers, we 
 The easiest way to install Xcode Command Line Tools is by installing **Homebrew**, the "missing package manager for macOS".
 
 ## Homebrew
-Homebrew allows you to install the stuff you need that Apple didn't (both CLI and GUI tools).
+Homebrew allows you to install the stuff you need that Apple didn't (both CLI tools and GUI apps).
 
 **Install Homebrew**
 ```shell
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-If you haven't already installed XCode Command Line Tools, you'll see a message that "The XCode Command Line Tools will be installed." Press `return` to continue.
+If you haven't already installed XCode Command Line Tools, you'll see this message "The XCode Command Line Tools will be installed." Press `return` to continue.
 
 ## Oh my zsh
 Oh My Zsh is an open source, community-driven framework for managing your zsh configuration with several plugins and themes.
+
+All plugins listed on the plugins Github page are pre-installed with Oh-My-Zsh at `~/.oh-my-zsh/plugins`. Custom plugins can be installed at `~/.oh-my-zsh/custom/plugins`. To use a plugin, you can simply add it to the plugins list in your ~/.zshrc file.
 
 **Install Oh My Zsh**
 ```shell
@@ -41,7 +43,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 **Install custom Oh My Zsh plugins**
 ```shell
 $ cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 ```
 
 **Run your brewfile to install all your GUI and CLI apps**
@@ -50,6 +52,7 @@ $ brew bundle
 ```
 
 ## Macbook Settings
+
 - Link Apple ID
 - Menu bar: show Sound, Bluetooth, Battery percentage
 - Touch bar: shows `Expanded Control Strip` and customise: `Screen Lock`, `Keyboard Brightness`, `Brightness`, `Media`, `Volume`
@@ -66,4 +69,4 @@ $ brew bundle
   }
   ```
 - Keyboard: Key repeat (fast) / Delay until repeat (short)
-- Accessibility: Use scroll gesture with command key to zoom
+- Accessibility: Use scroll gesture with control key to zoom
