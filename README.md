@@ -1,4 +1,16 @@
-# Frontend Setup for MacOS
+# 🤖 Automated Frontend Setup for MacOS
+Clone this repo into your home directory
+```shell
+$ cd ~ && git clone https://github.com/alizehkhan/dotfiles.git
+```
+If you're not Alizeh then you might want to make some adjustments to personalise the setup for you. Then run the scripts in `install.sh`
+```shell
+$ source ~/dotfiles/install.sh
+```
+
+Grab a cuppa tea ☕️ and wait for the scripts to finish running ✅.
+
+# 🚶 Guided Frontend Setup for MacOS
 
 ## Dotfiles
 Dotfiles are configuration files for various programs in plain text format. They are called dotfiles because they start with a `.` 🧐. On Unix based systems, these are hidden by the operating system by default and are usually stored in your home directory `~`. To make these visible you can either press `cmd shift .` in finder or run the `ls -a` command.

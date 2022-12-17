@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 echo "Setting up your Mac..."
+echo "You might want to grab a cuppa ☕️ while we work through these scripts..."
 
 # Checks for Homebrew and installs if you don't have it
 if test ! $(which brew); then
@@ -36,9 +37,11 @@ brew update
 # Installs all our CLI and GUI apps in Brewfile using bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Creates code directory and clones Github repositories found in clone.zsh
+# Creates code directory and clones Github repositories found in clone.sh
 mkdir $HOME/code && cd $HOME/code
-source $DOTFILES/clone.zsh
+source $DOTFILES/clone.sh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 # source $DOTFILES/.macos
+
+echo "✅ Macbook's all set up for you, Alizeh!"
