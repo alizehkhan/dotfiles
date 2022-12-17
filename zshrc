@@ -1,4 +1,4 @@
-export DOTFILES=$HOME/.dotfiles
+export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -40,4 +40,7 @@ load-nvmrc() {
 type -a nvm > /dev/null && add-zsh-hook chpwd load-nvmrc
 type -a nvm > /dev/null && load-nvmrc
 
+# Load aliases
+source $DOTFILES/aliases.sh
+# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh

@@ -24,19 +24,21 @@ if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting
 fi
 
-# Removes .zshrc from $HOME and symlinks the .zshrc file from your .dotfiles directory
+# Removes these config files from $HOME and symlinks the .zshrc and .gitconfig file from this .dotfiles directory
 rm $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+rm $HOME/.gitconfig
+ln -s $DOTFILES/zshrc $HOME/.zshrc
+ln -s $DOTFILES/gitconfig $HOME/.gitconfig
 
 # Updates Homebrew recipes
 brew update
 
-# Installs all our CLI and GUI apps in Brewfile using bundle which is automatically installed when first run
+# Installs all our CLI and GUI apps in Brewfile using bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Creates code directory and clones Github repositories
+# Creates code directory and clones Github repositories found in clone.zsh
 mkdir $HOME/code && cd $HOME/code
-source $DOTFILES/clone.sh
+source $DOTFILES/clone.zsh
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source $DOTFILES/.macos
+# source $DOTFILES/.macos

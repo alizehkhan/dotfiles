@@ -1,9 +1,12 @@
-# CLI tools
+tap "homebrew/cask"
+
+# CLI utilities
 brew 'git'
 brew 'mas' # Mac App Store manager
 brew 'node'
 brew 'yarn'
 brew 'nvm'
+brew 'gh'
 
 # GUI apps
 cask 'google-chrome'
