@@ -1,15 +1,3 @@
-# 🤖 Automated Frontend Setup for MacOS
-Clone this repo into your home directory
-```shell
-$ cd ~ && git clone https://github.com/alizehkhan/dotfiles.git
-```
-If you're not Alizeh then you might want to make some adjustments to personalise the setup for you. Then run the scripts in `install.sh`
-```shell
-$ source ~/dotfiles/install.sh
-```
-
-Grab a cuppa tea ☕️ and wait for the scripts to finish running ✅.
-
 # 🚶 Guided Frontend Setup for MacOS
 
 ## ⚫️ Dotfiles
@@ -98,6 +86,17 @@ plugins=(
   web-search
 )
 ```
+# 🤖 Automated Frontend Setup for MacOS
+Clone this repo into your home directory
+```shell
+$ cd ~ && git clone https://github.com/alizehkhan/dotfiles.git
+```
+Run the scripts in `install.sh`
+```shell
+$ source ~/dotfiles/install.sh
+```
+
+Grab a cuppa tea ☕️ and wait for the scripts to finish running ✅.
 
 # 💻 Alizeh's Personal Macbook Settings
 
