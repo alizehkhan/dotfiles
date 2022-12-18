@@ -37,7 +37,7 @@ $ brew install node
 $ brew install --cask figma
 ```
 #### Install CLI utilities and GUI apps in bulk
-Create a `Brewfile` in your home directory. List all the CLI tools and GUI apps you need (check out the Brewfile in this repo as an example). Then using bundle, install all of the them using the command below:
+Create a `Brewfile` in your home directory. List all the CLI utililty and GUI apps you need (check out the [Brewfile](Brewfile) in this repo as an example). Then using bundle, install all of the them using the command below:
 ```shell
 $ brew bundle --file ~/Brewfile
 ```
@@ -64,7 +64,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 ```
 
 ### Configure
-The `.zshrc` file in your home directory is where any custom configuration lives for zsh. It's run whenever you start the shell eg. by entering the `zsh` command or opening a new session in terminal. When you install Oh My Zsh, this file is populated with some default configuration.
+The `.zshrc` file in your home directory is where any custom configuration lives for zsh. It's run whenever you start the shell eg. by entering the `zsh` command or opening a new session in terminal. When you install Oh My Zsh, this file is populated with some default configuration. You can check out how I configured my [zshrc file here](zshrc).
 
 ### Plugins
 The [preinstalled plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)🔌 it comes with is located in `~/.oh-my-zsh/plugins`. Custom plugins can also be installed in `~/.oh-my-zsh/custom/plugins`.
@@ -87,11 +87,13 @@ plugins=(
 )
 ```
 # 🤖 Automated Frontend Setup for MacOS
-Clone this repo into your home directory
+**Fork and clone this repo into your home directory.**
 ```shell
-$ cd ~ && git clone https://github.com/alizehkhan/dotfiles.git
+$ cd ~ && gh repo fork alizehkhan/dotfiles --clone
 ```
-Run the scripts in `install.sh`
+Note: to do this via the command line, you would need the Github CLI tool which can either install using Homebrew or manually via [their docs site](https://cli.github.com/). But you can also fork and clone this repo manually if you want.
+
+**Run the scripts in `install.sh`**
 ```shell
 $ source ~/dotfiles/install.sh
 ```

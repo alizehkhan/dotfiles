@@ -1,5 +1,6 @@
 export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
+export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
@@ -16,6 +17,9 @@ plugins=(
   last-working-dir
   web-search
 )
+
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Call `nvm use` automatically in a directory with a `.nvmrc` file
 autoload -U add-zsh-hook
