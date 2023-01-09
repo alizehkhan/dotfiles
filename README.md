@@ -1,11 +1,27 @@
 # Frontend Setup for MacOS
 
-## 📖 Beginner’s Frontend Setup Guide
+## Beginner's guide
 
-👉 Check out my [Medium article](https://medium.com/@alizeh.khan/minimalist-frontend-setup-for-macos-caae2b667ab9)
+If you're a beginner to setup, I wrote a Medium article with an intro to the shell, the basic utilities and config files involved in the frontend setup process. Check that out first and then come back to this README for a walk through of my minimalist dotfiles repo which will hopefully help you learn to build your own.
 
-## 🤖 Automated Frontend Setup
-**Fork and clone this repo into your home directory.**
+👉 [Medium article | Beginner’s Frontend Setup Guide](https://medium.com/@alizeh.khan/minimalist-frontend-setup-for-macos-caae2b667ab9)
+
+
+## Files explained
+
+### `install.sh`
+`aliases.sh`
+`clone.sh`
+
+### `Brewfile`
+
+### `gitconfig`
+
+### `.zshrc`
+
+## Setup
+Fork and clone this repo into your home directory.
+
 ```shell
 $ cd ~ && gh repo fork alizehkhan/dotfiles --clone
 ```
@@ -18,7 +34,7 @@ $ source ~/dotfiles/install.sh
 
 Grab a cuppa tea ☕️ and wait for the scripts to finish running ✅.
 
-## 💻 My Personal Macbook Settings
+## Personal macOS preferences
 
 - Link Apple ID
 - Menu bar: show Sound, Bluetooth, Battery percentage
