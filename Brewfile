@@ -7,6 +7,8 @@ brew 'node'
 brew 'yarn'
 brew 'nvm'
 brew 'gh'
+brew 'parallel'
+brew 'python'
 
 # GUI apps
 cask 'google-chrome'
@@ -20,6 +22,7 @@ cask 'whatsapp'
 cask 'zoom'
 cask 'notion'
 cask 'spectacle'
+cask 'insomnia'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899

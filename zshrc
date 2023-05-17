@@ -1,9 +1,13 @@
+# This file will run every time you start a terminal session or run the zsh command.
+
+# Global environment variables
 export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
-export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
+
+# Path to the directory with .zshrc
 ZSH_CUSTOM=$DOTFILES
 
 # Auto-update without asking
@@ -22,7 +26,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# Call `nvm use` automatically in a directory with a `.nvmrc` file
+# Call `nvm use` automatically in a directory with a `.nvmrc` file. Taken from https://github.com/nvm-sh/nvm#zsh
 autoload -U add-zsh-hook
 load-nvmrc() {
   local nvmrc_path="$(nvm_find_nvmrc)"
