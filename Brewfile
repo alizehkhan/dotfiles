@@ -21,7 +21,7 @@ cask 'slack'
 cask 'whatsapp'
 cask 'zoom'
 cask 'notion'
-cask 'spectacle'
+cask 'rectangle'
 cask 'insomnia'
 
 # Mac App Store
