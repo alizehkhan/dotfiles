@@ -4,9 +4,9 @@ This repo is heavily inspired by Dries Vints' awesome [blog post](https://driesv
 
 ## Beginner's guide
 
-If you're a beginner to setup, I wrote a Medium article with an intro to the shell, the basic utilities and config files involved in the frontend setup process. I've also commented on the purpose of each of the scripts in the files.
+If you're a beginner to setup, I wrote a blog post with an intro to the shell, the basic utilities and config files involved in the frontend setup process. I've also commented on the purpose of each of the scripts in the files.
 
-👉 [Medium article | Beginner’s Frontend Setup Guide](https://medium.com/@alizeh.khan/minimalist-frontend-setup-for-macos-caae2b667ab9)
+👉 [Beginner’s Frontend Setup Guide](https://alizehkhan.com/blog/frontend-setup)
 
 ## Setup
 
