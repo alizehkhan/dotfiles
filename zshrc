@@ -1,14 +1,9 @@
 # This file will run every time you start a terminal session or run the zsh command.
 
 # Global environment variables
-export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-HIST_STAMPS="dd/mm/yyyy"
-
-# Path to the directory with .zshrc
-ZSH_CUSTOM=$DOTFILES
 
 # Auto-update without asking
 zstyle ':omz:update' mode auto
@@ -23,9 +18,16 @@ plugins=(
 )
 
 # Load aliases
-source $DOTFILES/aliases.sh
+source $HOME/dotfiles/aliases.sh
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# pnpm
+export PNPM_HOME="/Users/alizehkhan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 # switch the Node.js version based on the requirements of the current directory, based on .node-version or .nvmrc
 eval "$(fnm env --use-on-cd --shell zsh)"

@@ -8,10 +8,9 @@ kill_port() {
     sudo lsof -t -i tcp:"$1" | xargs kill
 }
 
-# Altamiga
 function altamiga() {
   cd ~/code/altamiga/frontend &&
-  parallel -j 2 -u ::: 'pnpm start' 'cd ../api && .venv/bin/python manage.py runserver'
+  parallel -j 2 -u ::: 'pnpm start --host 0.0.0.0' 'cd ../api && .venv/bin/python manage.py runserver'
 }
 
 function seed() {
@@ -25,7 +24,7 @@ alias gst="git status"
 alias gco="git checkout"
 alias gcm="git checkout main"
 alias log="git log --oneline --decorate --color"
-alias commit="git commit -m"
+alias commit="git add . && git commit -m"
 alias pull="git pull"
 alias push="git push"
 alias force="git push --force"
