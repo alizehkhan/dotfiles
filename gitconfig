@@ -10,3 +10,6 @@
 
 [core]
     editor = code --wait # use VSCode as the default editor
+
+[pull]
+    rebase = true
