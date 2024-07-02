@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+# 0. New Macbook 😁
+# 1. Clone this dotfiles repo to your root directory.
+# 2. Run the scripts in this file: source ~/dotfiles/install.sh
+
 echo "Setting up your Mac..."
 echo "You might want to grab a cuppa ☕️ while we work through these scripts..."
 
@@ -38,8 +42,8 @@ brew update
 brew bundle --file $DOTFILES/Brewfile
 
 # Creates code directory and clones Github repositories found in clone.sh
-mkdir $HOME/code && cd $HOME/code
-source $DOTFILES/clone.sh
+# mkdir $HOME/code && cd $HOME/code
+# source $DOTFILES/clone.sh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 # source $DOTFILES/.macos

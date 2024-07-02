@@ -1,3 +1,12 @@
 [user]
 	name = Alizeh Khan
 	email = alizehedinburgh@gmail.com
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+
+[core]
+    editor = code --wait # use VSCode as the default editor

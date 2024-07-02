@@ -6,7 +6,13 @@ brew 'mas' # Mac App Store manager
 brew 'node'
 brew 'yarn'
 brew 'nvm'
+brew 'pnpm'
+brew 'corepack'
 brew 'gh'
+# For Wandern
+brew 'parallel'
+brew 'poetry'
+brew 'python3'
 
 # GUI apps
 cask 'google-chrome'
@@ -19,7 +25,8 @@ cask 'slack'
 cask 'whatsapp'
 cask 'zoom'
 cask 'notion'
-cask 'spectacle'
+cask 'rectangle'
+cask 'insomnia'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899

@@ -1,9 +1,13 @@
+# This file will run every time you start a terminal session or run the zsh command.
+
+# Global environment variables
 export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
-export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
+
+# Path to the directory with .zshrc
 ZSH_CUSTOM=$DOTFILES
 
 # Auto-update without asking
@@ -18,17 +22,21 @@ plugins=(
   web-search
 )
 
+# Initialise nvm
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# Call `nvm use` automatically in a directory with a `.nvmrc` file
+# Call `nvm use` automatically in a directory with a `.nvmrc` file. Taken from https://github.com/nvm-sh/nvm#zsh
 autoload -U add-zsh-hook
+
 load-nvmrc() {
-  local nvmrc_path="$(nvm_find_nvmrc)"
+  local nvmrc_path
+  nvmrc_path="$(nvm_find_nvmrc)"
 
   if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+    local nvmrc_node_version
+    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
     if [ "$nvmrc_node_version" = "N/A" ]; then
       nvm install
@@ -40,8 +48,10 @@ load-nvmrc() {
     nvm use default
   fi
 }
+
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+#-------------------
 
 # Load aliases
 source $DOTFILES/aliases.sh

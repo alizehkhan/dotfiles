@@ -1,34 +1,41 @@
 # My Frontend Setup for MacOS
 
+This repo is inspired by Dries Vints' awesome [blog post](https://driesvints.com/blog/getting-started-with-dotfiles) and [dotfiles repo](https://github.com/driesvints/dotfiles).
+
 ## Beginner's guide
 
-If you're a beginner to setup, I wrote a Medium article with an intro to the shell, the basic utilities and config files involved in the frontend setup process.
+If you're a beginner to setup, I wrote a blog post with an intro to the shell, the basic utilities and config files involved in the frontend setup process. I've also commented on the purpose of each of the scripts in the files.
 
-👉 [Medium article | Beginner’s Frontend Setup Guide](https://medium.com/@alizeh.khan/minimalist-frontend-setup-for-macos-caae2b667ab9)
+👉 [Beginner’s Frontend Setup Guide](https://alizehkhan.com/blog/frontend-setup)
 
 ## Setup
+
 Clone this repo into your home directory.
 
 ```shell
 git clone https://github.com/alizehkhan/dotfiles.git
 ```
+
 **Run the scripts in `install.sh`**
+
+*⚠️ Please don't run other people's scripts blindly. Stay safe.*
+
 ```shell
 source ~/dotfiles/install.sh
 ```
 
-Grab a cuppa tea ☕️ and wait for the scripts to finish running ✅.
+Grab a cuppa ☕️ and wait for the scripts to finish running ✅.
 
 ## Personal macOS preferences
 
 - Link Apple ID
-- Menu bar: show Sound, Bluetooth, Battery percentage
 - Dock: Automatically hide and show
 - Trackpad: Uncheck Scroll direction: Natural
 - Keyboard: Key repeat (fast) / Delay until repeat (short)
 - Accessibility: Use scroll gesture with control key to zoom
 - Finder preferences:
 - iTerm preferences
+
 ```js
   {
     theme: 'Minimal',
