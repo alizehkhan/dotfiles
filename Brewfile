@@ -9,7 +9,7 @@ brew 'nvm'
 brew 'pnpm'
 brew 'corepack'
 brew 'gh'
-# For Wandern
+# For Altamiga
 brew 'parallel'
 brew 'poetry'
 brew 'python3'

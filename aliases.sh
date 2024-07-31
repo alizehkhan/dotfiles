@@ -8,14 +8,14 @@ kill_port() {
     sudo lsof -t -i tcp:"$1" | xargs kill
 }
 
-# Wandern
-function wandern() {
-  cd ~/code/wandern/frontend &&
+# Altamiga
+function altamiga() {
+  cd ~/code/altamiga/frontend &&
   parallel -j 2 -u ::: 'pnpm start' 'cd ../api && .venv/bin/python manage.py runserver'
 }
 
 function seed() {
-  cd ~/code/wandern/api &&
+  cd ~/code/altamiga/api &&
   .venv/bin/python manage.py seed $@ &&
   cd ../frontend
 }
