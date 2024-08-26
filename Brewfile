@@ -24,7 +24,7 @@ cask 'iterm2'
 cask 'slack'
 cask 'whatsapp'
 cask 'zoom'
-cask 'notion'
+cask 'chatgpt'
 cask 'rectangle'
 cask 'insomnia'
 
