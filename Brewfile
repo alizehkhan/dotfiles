@@ -5,7 +5,7 @@ brew 'git'
 brew 'mas' # Mac App Store manager
 brew 'node'
 brew 'yarn'
-brew 'nvm'
+brew 'fnm'
 brew 'pnpm'
 brew 'corepack'
 brew 'gh'
