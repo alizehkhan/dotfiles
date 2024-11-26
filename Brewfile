@@ -27,6 +27,7 @@ cask 'zoom'
 cask 'chatgpt'
 cask 'rectangle'
 cask 'insomnia'
+cask 'whimsical'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899
