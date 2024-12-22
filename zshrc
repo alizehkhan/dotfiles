@@ -1,5 +1,8 @@
 # This file will run every time you start a terminal session or run the zsh command.
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Global environment variables
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -14,7 +17,6 @@ plugins=(
   zsh-syntax-highlighting
   history-substring-search
   last-working-dir
-  web-search
 )
 
 # Load aliases
