@@ -4,7 +4,6 @@ tap "homebrew/cask"
 brew 'git'
 brew 'mas' # Mac App Store manager
 brew 'node'
-brew 'yarn'
 brew 'fnm'
 brew 'pnpm'
 brew 'corepack'
@@ -13,6 +12,7 @@ brew 'gh'
 brew 'parallel'
 brew 'poetry'
 brew 'python3'
+brew 'postgresql@16'
 
 # GUI apps
 cask 'google-chrome'
@@ -28,6 +28,7 @@ cask 'chatgpt'
 cask 'rectangle'
 cask 'insomnia'
 cask 'whimsical'
+cask 'linear-linear'
 
 # Mac App Store
 mas 'Meeter für Zoom, Teams & Co.', id: 1510445899
