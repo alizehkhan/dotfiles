@@ -8,12 +8,12 @@ brew 'fnm'
 brew 'pnpm'
 brew 'corepack'
 brew 'gh'
+brew 'zsh-syntax-highlighting'
 # For Altamiga
 brew 'parallel'
 brew 'poetry'
 brew 'python3'
 brew 'postgresql@16'
-brew 'zsh-syntax-highlighting'
 
 # GUI apps
 cask 'google-chrome'
