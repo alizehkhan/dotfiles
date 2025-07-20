@@ -13,6 +13,7 @@ brew 'parallel'
 brew 'poetry'
 brew 'python3'
 brew 'postgresql@16'
+brew 'zsh-syntax-highlighting'
 
 # GUI apps
 cask 'google-chrome'
