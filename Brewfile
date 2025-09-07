@@ -26,10 +26,7 @@ cask 'slack'
 cask 'whatsapp'
 cask 'zoom'
 cask 'chatgpt'
-cask 'rectangle'
+cask 'raycast'
 cask 'insomnia'
 cask 'whimsical'
 cask 'linear-linear'
-
-# Mac App Store
-mas 'Meeter für Zoom, Teams & Co.', id: 1510445899
