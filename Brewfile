@@ -9,12 +9,12 @@ brew 'pnpm'
 brew 'corepack'
 brew 'gh'
 brew 'zsh-syntax-highlighting'
+brew 'mise'
 # For Altamiga
 brew 'parallel'
 brew 'poetry'
 brew 'python3'
 brew 'postgresql@16'
-brew 'mise'
 
 # GUI apps
 cask 'google-chrome'
