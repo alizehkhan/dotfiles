@@ -14,7 +14,6 @@ zstyle ':omz:update' mode auto
 # Useful oh-my-zsh plugins
 plugins=(
   git
-  zsh-syntax-highlighting
   history-substring-search
   last-working-dir
 )
@@ -31,5 +30,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# switch the Node.js version based on the requirements of the current directory, based on .node-version or .nvmrc
+# Automatically switch the Node.js version when you cd into a directory with a .node-version or .nvmrc file
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Automatically switch tool versions when you cd into a directory with a .tool-versions or mise.toml config file
+eval "$(mise activate zsh)"
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
